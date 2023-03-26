@@ -20,7 +20,7 @@ const App = () => {
 		setLoading(true);
 		setError(null);
 
-		fetch(`http://www.omdbapi.com/?s=${searchValue}&apikey=${api_key}`)
+		fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=${api_key}`)
 			.then((resp) => resp)
 			.then((resp) => resp.json())
 			.then((response) => {
